@@ -30,8 +30,8 @@ server.use((req, res, next) => {
 // Use default router
 server.use(router);
 
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
-server.listen(port, () => {
+server.listen(PORT, () => {
   console.log("JSON Server is running");
 });
