@@ -24,6 +24,7 @@ server.use((req, res, next) => {
 
 // Use default router
 server.use(router);
-server.listen(3000, () => {
-  console.log("JSON Server is running");
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log("Express server listening on port", port);
 });
