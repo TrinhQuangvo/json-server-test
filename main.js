@@ -10,11 +10,7 @@ server.use(middlewares);
 server.get("/echo", (req, res) => {
   res.jsonp(req.query);
 });
-server.use(
-  jsonServer.rewriter({
-    "/api/posts": "/posts",
-  })
-);
+
 
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
